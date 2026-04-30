@@ -44,10 +44,10 @@ def get_valid_vehicle() -> str:
         resolved = resolve_vehicle_type(choice)
 
         if resolved:
-            print(f"  ✅ Got it! Booking a {resolved} for you.\n")
+            print(f"  Got it! Booking a {resolved} for you.\n")
             return resolved
         else:
-            print(f"  ⚠  '{choice}' is not recognized.")
+            print(f"    '{choice}' is not recognized.")
             print("  Try: Motorcycle, Auto, Economy, Premium, SUV")
             print("  Or aliases like: bike, car, sedan, eco, rickshaw\n")
 
@@ -66,6 +66,6 @@ def get_valid_hour() -> int:
             if 0 <= hour <= 23:
                 return hour
             else:
-                print("  ⚠  Hour must be between 0 and 23. Try again.\n")
+                print("    Hour must be between 0 and 23. Try again.\n")
         except ValueError:
-            print("  ⚠  Invalid input. Please enter a whole number (e.g. 17).\n")
+            print("    Invalid input. Please enter a whole number (e.g. 17).\n")
