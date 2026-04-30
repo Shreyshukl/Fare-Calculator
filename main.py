@@ -15,7 +15,7 @@ def main():
     Main function — orchestrates the CityCab fare calculation flow.
     """
     print("\n" + "=" * 40)
-    print("    🚕  Welcome to CityCab FareCalc")
+    print("     Welcome to CityCab FareCalc")
     print("=" * 40)
 
     # Step 1: Collect inputs (validator handles all errors)
@@ -34,7 +34,7 @@ def main():
     if again == "yes":
         main()  # Restart the program
     else:
-        print("\nThank you for using CityCab! 🚕\n")
+        print("\nThank you for using CityCab!\n")
 
 
 # Industry standard — this ensures main() only runs
