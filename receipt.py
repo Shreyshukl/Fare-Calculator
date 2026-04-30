@@ -19,7 +19,7 @@ def print_receipt(fare_details: dict) -> None:
     border = "=" * 40
 
     print(f"\n{border}")
-    print("       🚕  CITYCAB — PRICE RECEIPT")
+    print("CITYCAB — PRICE RECEIPT")
     print(border)
     print(f"  Date & Time     : {now}")
     print(f"  Vehicle Type    : {fare_details['vehicle_type']}")
@@ -29,9 +29,9 @@ def print_receipt(fare_details: dict) -> None:
     print("-" * 40)
 
     if fare_details["surge_applied"]:
-        print(f"  ⚡ Surge Pricing : {fare_details['multiplier']}x  (Peak Hours)")
+        print(f"  Surge Pricing : {fare_details['multiplier']}x  (Peak Hours)")
     else:
-        print("  ✅ No Surge Pricing (Off-Peak)")
+        print("No Surge Pricing (Off-Peak)")
 
     print("-" * 40)
     print(f"  TOTAL FARE      : ₹{fare_details['final_fare']:.2f}")
